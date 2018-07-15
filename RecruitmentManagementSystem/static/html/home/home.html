@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static from staticfiles %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width==device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{% static  '/css/bootstrap/css/bootstrap.min.css' %}" type="text/css"/>
+    <link rel="stylesheet" href="{% static  '/css/bootstrap/css/bootstrap-grid.min.css' %}" type="text/css"/>
+    <link rel="stylesheet" href="{% static  '/css/home/home.css' %}" type="text/css"/>
+    <title>Career Point</title>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+        <a class="navbar-brand" href="/">Career Point</a>
+        <div id="header_content">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/searchjob">Search Job</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/careersupport">Career Support</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/help">Help</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<section class="jumbotron" style="margin-bottom:0px;">
+    <div id="login_in_section_div" class="row">
+        <div id="introduction_div" class="col-6">
+            <h1 class="display-4">Hi,</h1>
+            <p class="lead">Career Point is a job seeking website</p>
+            <hr class="my-4">
+            <p>After you register, you can:</p>
+            <p>- Apply to jobs from the site while keeping your resume hidden from all recruiters.</p>
+            <p>- Mark yourself as a 'passive job seeker' if you are not actively looking for a job.</p>
+            <p>- Block your company or other specific companies from viewing your profile.</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="/about" role="button">Learn more</a>
+            </p>
+        </div>
+        <div id="login_form_div" class="col-6">
+            <div id="login_information_div" class="row">
+                <div class="card" style="width: 18rem;margin-right:5px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Recruiter</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Post Job for free</h6>
+                        <p class="card-text">Recruit smart, recruit right</p>
+                        <p class="card-text">Over 2.5million candidates are seeking for job.</p>
+                        <a href="/" class="card-link">Sign Up Free</a>
+                        <div id="recruiter_login">
+                            <span>Already have account!!</span>
+                            <a href="/" class="card-link">Sign In</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Are You Job Seeker?</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Over 30000000+ Jobs</h6>
+                        <p class="card-text">Find the right job on Career Point.</p>
+                        <p class="card-text">You are only few steps away from millions of jobs</p>
+                        <a href="/" class="card-link">Sign Up Free</a>
+                        <div id="job_seeker_login">
+                            <span>Already have account!!</span>
+                            <a href="/" class="card-link">Sign In</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="my-4" style="margin:0px 0px;">
+    <div id="supporter_div" class="row">
+        <div id="supporters_list_div" class="col-6">
+            <p class="lead">
+            <h2>Our Supporters</h2></p>
+            <hr class="my-4">
+            <div class="row">
+                <a class="supporters-logo" href="/about">
+                    <img src="{% static '/image/home/company-1.jpg' %}"
+                         alt="Smiley face" height="40" width="100">
+                </a>
+                <a class="supporters-logo" href="/about">
+                    <img src="{% static '/image/home/company-2.jpg' %}"
+                         alt="Smiley face" height="40" width="100">
+                </a>
+                <a class="supporters-logo" href="/about">
+                    <img src="{% static '/image/home/company-3.jpg' %}"
+                         alt="Smiley face" height="40" width="100">
+                </a>
+                <a class="supporters-logo" href="/about">
+                    <img src="{% static '/image/home/company-4.jpg' %}"
+                         alt="Smiley face" height="40" width="100">
+                </a>
+            </div>
+            <div class="row support-logo-list">
+                <a class="supporters-logo" href="/about">
+                    <img src="{% static '/image/home/company-6.jpg' %}"
+                         alt="Smiley face" height="40" width="100">
+                </a>
+                <a class="supporters-logo" href="/about">
+                    <img src="{% static '/image/home/company-7.jpg' %}"
+                         alt="Smiley face" height="40" width="100">
+                </a>
+                <a class="supporters-logo" href="/about">
+                    <img src="{% static '/image/home/company-8.jpg' %}"
+                         alt="Smiley face" height="40" width="100">
+                </a>
+                <a class="supporters-logo" href="/about">
+                    <img src="{% static '/image/home/company-5.png' %}"
+                         alt="Smiley face" height="40" width="100">
+                </a>
+            </div>
+            <div class="row">
+                <a class="supporters-logo" href="/about">
+                    <img src="{% static '/image/home/company-9.jpg' %}"
+                         alt="Smiley face" height="40" width="100">
+                </a>
+                <a class="supporters-logo" href="/about">
+                    <img src="{% static '/image/home/company-10.jpg' %}"
+                         alt="Smiley face" height="40" width="100">
+                </a>
+                <a class="supporters-logo" href="/about">
+                    <img src="{% static '/image/home/company-11.jpg' %}"
+                         alt="Smiley face" height="40" width="100">
+                </a>
+                <a class="supporters-logo" href="/about">
+                    <img src="{% static '/image/home/company-12.jpg' %}"
+                         alt="Smiley face" height="40" width="100">
+                </a>
+            </div>
+            <div class="row">
+                <div class="col-7"></div>
+                <a class="more_supporters" href="/about" role>
+                    Learn More
+                </a>
+            </div>
+        </div>
+        <div id="supporters_description" class="col-6">
+            <p class="lead"><h2>Words of our supporters,</h2></p>
+            <hr class="my-4">
+            <p>After you register, you can:</p>
+            <p>- Apply to jobs from the site while keeping your resume hidden from all recruiters.</p>
+            <p>- Mark yourself as a 'passive job seeker' if you are not actively looking for a job.</p>
+            <p>- Block your company or other specific companies from viewing your profile.</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="/about" role="button">Learn more</a>
+            </p>
+        </div>
+    </div>
+</section>
+<script src="{% static '/js/bootstrap/js/bootstrap.min.js' %}"></script>
+<script src="{% static '/js/bootstrap/js/jquery.min.js' %}"></script>
+<script src="{% static '/js/jquery-ui/jquery-ui.min.js' %}"></script>
+</body>
+</html>
